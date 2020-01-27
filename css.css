@@ -9,6 +9,7 @@
             padding: 0;
             width: 100%;
             max-width: 800px;
+            align-items: center;
         }
         
         .cabesalho {
@@ -401,6 +402,9 @@
         }
         
         @media screen and (min-width: 800px) {
+            .max800px {
+                display: none;
+            }
             #check {
                 display: none;
             }
@@ -413,8 +417,8 @@
             .list-auto {
                 display: none;
             }
-            .oitocentospxconteiner {
-                display: ;
+            .sobremimmax800 {
+                display: none;
             }
         }
         
@@ -422,20 +426,14 @@
             #check {
                 display: none;
             }
-            #icone {
-                display: none;
-            }
-            .barra {
-                display: none;
-            }
+            #icone {}
+            .barra {}
             #control-nav,
-            .list-auto {
-                display: none;
-            }
+            .list-auto {}
             .nome {
                 font-size: 150%;
-                margin-left: 13%;
-                top: 10%;
+                margin-left: 20%;
+                top: 10px;
                 width: 70%;
             }
             .cabesalho {
@@ -443,7 +441,7 @@
             }
             .funcao {
                 font-size: 90%;
-                margin-left: 13%;
+                margin-left: 20%;
                 top: 10%;
             }
             .botao {
@@ -470,23 +468,106 @@
                 display: none;
             }
             .oitocentospx {
-                display: inline;
+                display: none;
             }
-            .quatrocentospxdireita {
+            .primeiro {
+                display: none;
+            }
+            .max800px .conteiner {
+                left: 0px;
+            }
+            .max800px .nunber {
+                width: 20px;
+            }
+            .max800px .percent {
+                width: 100%;
+            }
+            .mim {
+                margin-left: 30%;
+            }
+            .skills {
+                display: none;
+            }
+            .email {
+                margin-bottom: 0px;
+            }
+            .risco2 {
+                display: none;
+            }
+            .fotoeu {
+                max-width: 100%;
+                max-height: 100%;
+                width: 35%;
+            }
+            #icone {
+                cursor: pointer;
+                padding: 15px;
+                position: absolute;
+                z-index: 2;
+                top: 0px;
+                margin-left: 2%;
+                max-width: 30%;
+                max-height: 30%;
+            }
+            .barra {
+                background-color: #333;
+                height: 300px;
+                width: 300px;
+                position: absolute;
+                transition: all .2s linear;
+                left: -300px;
+                margin-top: 0px;
+                z-index: 1;
+            }
+            nav {
                 width: 100%;
                 position: relative;
-                margin-top: 15px;
+                top: 70px;
             }
-            .quatrocentospxesquerda {
-                position: relative;
-                left: -100px;
+            .link {
+                background-color: #494950;
+                padding: 20px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 12pt;
+                transition: all .2s linear;
+                border-bottom: 2px solid #222;
+                opacity: 0;
+                margin-top: 200px;
             }
-            .conteiner {
+            .link :hover {
+                background-color: #050542;
+            }
+            #check:checked~.barra {
+                transform: translateX(300px)
+            }
+            #check:checked~.barra nav a .link {
+                opacity: 1;
+                margin-top: 0px;
+                transition-delay: .2s;
+            }
+            .sobremimmax800 .quadrado {
+                margin-top: 5%;
+                margin-left: 10%;
+                width: 80%;
+            }
+            .mim2 {
                 position: relative;
-                top: 200px;
-                display: inline;
-                justify-content: space-around;
-                max-width: 0%;
+                margin-top: -25px;
+                color: white;
+                margin-bottom: 5px;
+                text-align: center;
+            }
+            .contato {
+                text-align: center;
+                line-height: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .risco5 {
+                position: relative;
+                background-color: #4E8FBB;
+                width: 80%;
+                height: 3px;
+                margin-left: 10%;
             }
         }
         
@@ -494,82 +575,14 @@
             .univer {
                 margin-left: -10%;
             }
+            .risco4 {
+                max-width: 40%;
+                margin-left: 60%;
+            }
+            .textorodape {
+                margin-left: 0%;
+            }
+            .univer {
+                width: 100%;
+            }
         }
-        /*{
-    .cabesalho {
-        height: 100px;
-        width: 100%;
-    }
-   
-    
-    .conteiner {
-        display: inline;
-    }
-    .card {
-        left: 30%;
-        margin-bottom: 10px;
-    }
-    .risco4 {
-        display: none;
-    }
-    .univer {
-        left: 10px;
-        width: 90%;
-    }
-    .ano {
-        display: none;
-    }
-    #check {
-        display: none;
-    }
-    #icone {
-        cursor: pointer;
-        padding: 15px;
-        position: absolute;
-        z-index: 2;
-        top: 15px;
-        left: 30px;
-        max-width: 50%;
-        max-height: 50%;
-    }
-    .barra {
-        background-color: #333;
-        height: 300px;
-        width: 300px;
-        position: absolute;
-        transition: all .2s linear;
-        left: -300px;
-        margin-top: 0px;
-        z-index: 1;
-    }
-    nav {
-        width: 100%;
-        position: relative;
-        top: 70px;
-    }
-    .link {
-        background-color: #494950;
-        padding: 20px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 12pt;
-        transition: all .2s linear;
-        border-bottom: 2px solid #222;
-        opacity: 0;
-        margin-top: 200px;
-    }
-    .link :hover {
-        background-color: #050542;
-    }
-    #check:checked~.barra {
-        transform: translateX(300px)
-    }
-    #check:checked~.barra nav a .link {
-        opacity: 1;
-        margin-top: 0px;
-        transition-delay: .2s;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .conteiner {}
-}*/
