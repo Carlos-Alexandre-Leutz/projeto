@@ -10,32 +10,41 @@
 </head>
 
 <body>
-    <input type="checkbox" id="check">
+   
+    <input type="checkbox" id="check" class="marcar" name='check[]' />
     <label for="check" id="icone"> <img src="icone.png" alt=""></label>
+    <label class="close" for="check" id="icone"></label>
+
     <div class="barra">
+
+
         <nav>
+            <a href="https://facebook.com">
+                <div class="link"> <img class="logo" src="facebook.png" alt=""></div>
+            </a>
+            <a href="https://instagram.com">
+                <div class="link"> <img class="logo" src="instagram.png" alt=""></div>
+            </a>
             <a href="">
-                <div class="link"> SOBRE MIM</div>
+                <div class="link"> <img class="logo" src="plus.png" alt=""></div>
             </a>
-            <a href="#habilidades">
-                <div class="link"> HABILIDADE</div>
+            <a href="">
+                <div class="link"><img class="logo" src="twitter.png" alt=""></div>
             </a>
-            <a href="#experiencia">
-                <div class="link"> EXPERIENCIA</div>
+            <a href="">
+                <div class="link"> <img class="logo" src="youtube.png" alt=""></div>
             </a>
-            <a href="#educação">
-                <div class="link"> EDUCAÇÃO</div>
-            </a>
-            <a href="#contato">
-                <div class="link"> CONTATO</div>
-            </a>
+
         </nav>
+
     </div>
     <div class="cabesalho">
         <div class="nome">Alexandre Leutz</div>
         <div class="funcao">Desenvolvedor web</div>
         <div class="botao">
-            <button class="ovo"><a href="#sobre">
+
+            <button class="btn btn-large ovo" type='button' title='Todos' id='todos' onclick='marcardesmarcar();'>
+                <i class='icon-large icon-ok'></i><a href="#sobre">
                         <p>SOBRE</p>
                     </a> </button>
             <button class="ovo"><a href="#habilidades">
@@ -47,7 +56,8 @@
             <button class="ovo"><a href="#educacao">
                         <p>EDUCAÇÃO</p>
                     </a></button>
-            <button class="ovo"><a href="#contato">
+            <button class="ovo btn btn-large" type='button' title='Todos' id='todos' onclick='marcardesmarcar();'>
+                <i class='icon-large icon-ok'></i><a href="#contato">
                         <p></p> CONTATO
                     </a></button>
         </div class="botao">
@@ -68,22 +78,22 @@
             <div class="dusentospxdireita"><img class="fotoeu2" src="foto.jpg" alt="">
             </div>
             <div class="quadrado"></div>
-            <div class="mim2">HABILIDADES</div>
+            <div class="mim3">HABILIDADES</div>
         </div>
     </div>
     <div class="oitocentospx">
         <div class="quatrocentospxesquerda">
-            <div id="sobre" class="quadrado"></div>
-            <div class="mim">SOBRE MIM</div>
+            <div class="quadrado"></div>
+            <div id="sobre" class="mim">SOBRE MIM</div>
 
             <div class="fone" id="contato"><b>Fone:</b> (47)99933-3485</div>
             <div class="email"><b>Email:</b> Leutzeleutz@gmail.com</div>
             <div class="redessociais">
-                <div class="facebook"></div>
-                <div class="insta"></div>
-                <div class="github"></div>
-                <div class="linkedin"></div>
-                <div class="whats"></div>
+                <div class="facebook forma"><img src="facebook.png" alt=""> </div>
+                <div class="insta forma"><img src="instagram.png" alt=""></div>
+                <div class="github forma"><img src="plus.png" alt=""></div>
+                <div class="linkedin forma"><img src="twitter.png" alt=""></div>
+                <div class="whats forma"><img src="youtube.png" alt=""></div>
             </div>
 
             <div id="habilidades" class="quadrado skills "></div>
@@ -245,7 +255,6 @@
     </div>
 
     </div>
-
     <div class="rodape">
         <div class="educacao">
             Educação
