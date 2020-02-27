@@ -16,7 +16,7 @@
     <label for="check" id="icone"> <img src="icone.png" alt=""></label>
     <label class="close" for="check" id="icone"></label>
 
-    <div class="barra">
+    <div class="bar">
 
 
         <nav>
@@ -39,25 +39,25 @@
         </nav>
 
     </div>
-    <div class="cabesalho">
+    <div class="header">
         <div class="nome">Alexandre Leutz</div>
         <div class="funcao">Desenvolvedor web</div>
         <div class="botao">
 
-            <button class="btn btn-large ovo" type='button' title='Todos' id='todos' onclick='marcardesmarcar();'>
+            <button class="btn btn-large " type='button' title='Todos' id='todos' onclick='marcardesmarcar();'>
                 <i class='icon-large icon-ok'></i><a href="#sobre">
                         <p>SOBRE</p>
                     </a> </button>
-            <button class="ovo"><a href="#habilidades">
+            <button class=""><a href="#habilidades">
                         <p>HABILIDADE</p>
                     </a></button>
-            <button class="ovo"><a href="#experiencia">
+            <button class=""><a href="#experiencia">
                         <p>EXPERIENCIA</p>
                     </a></button>
-            <button class="ovo"><a href="#educacao">
+            <button class=""><a href="#educacao">
                         <p>EDUCAÇÃO</p>
-                    </a></button>
-            <button class="ovo btn btn-large" type='button' title='Todos' id='todos' onclick='marcardesmarcar();'>
+                   </a></button>
+            <button class=" btn btn-large" type='button' title='Todos' id='todos' onclick='marcardesmarcar();'>
                 <i class='icon-large icon-ok'></i><a href="#contato">
                         <p></p> CONTATO
                     </a></button>
@@ -65,7 +65,7 @@
 
 
 
-    </div class="cabesalho">
+    </div class="header">
     <div class="sobremimmax800">
         <div class="quadrado"> </div>
         <div class="mim2">SOBRE MIM</div>
@@ -124,144 +124,80 @@
         </div>
     </div>
     <br>
-    <div class="primeiro">
+    <div class="flex-wrapper">
+        <div class="single-chart">
+            <svg viewBox="0 0 36 36" class="circular-chart blue">
+                <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="50, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="20.35" class="percentage">50%</text>
+              </svg>
+            <div class="text">HTML</div>
+        </div>
 
-        <div class="conteiner">
-            <div class="card">
-                <div class="box">
-                    <svg class="percent">
-                <circle class="rail" r="70" cx="70" cy="70"></circle>
-                <circle class="progress" r="70" cx="70" cy="70"></circle>
 
-            </svg>
-                    <div class="nunber">
-                        <h1>50<span>%</span></h1>
+        <div class="single-chart">
+            <svg viewBox="0 0 36 36" class="circular-chart blue">
+                <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="40, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="20.35" class="percentage">40%</text>
+              </svg>
+            <div class="text">Css</div>
+        </div>
 
-                    </div>
-                    <div class="texto">HTML </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <svg class="percent">
-                <circle class="rail" r="70" cx="70" cy="70"></circle>
-                <circle class="progress" r="70" cx="70" cy="70"></circle>
+        <div class="single-chart">
+            <svg viewBox="0 0 36 36" class="circular-chart blue">
+                <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="30, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="20.35" class="percentage">30%</text>
+              </svg>
+            <div class="text">JavaScript</div>
+        </div>
 
-            </svg>
-                    <div class="nunber">
-                        <h1>40<span>%</span></h1>
-
-                    </div>
-                    <div class="texto">CSS </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <svg class="percent">
-                <circle class="rail" r="70" cx="70" cy="70"></circle>
-                <circle class="progress" r="70" cx="70" cy="70"></circle>
-
-            </svg>
-                    <div class="nunber">
-                        <h1>30<span>%</span></h1>
-
-                    </div>
-                    <div class="texto">JavaScript</div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <svg class="percent">
-                <circle class="rail" r="70" cx="70" cy="70"></circle>
-                <circle class="progress" r="70" cx="70" cy="70"></circle>
-
-            </svg></div>
-                <div class="nunber">
-                    <h1>40<span>%</span></h1>
-
-                </div>
-                <div class="texto">Bootstrap </div>
-            </div>
+        <div class="single-chart">
+            <svg viewBox="0 0 36 36" class="circular-chart blue">
+                <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="40, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="20.35" class="percentage">40%</text>
+              </svg>
+            <div class="text">JavaScript</div>
         </div>
     </div>
-    <div class="max800px">
-
-        <div class="conteiner">
-            <div class="card">
-                <div class="box">
-                    <svg class="percent">
-                <circle class="rail" r="70" cx="70" cy="70"></circle>
-                <circle class="progress" r="70" cx="70" cy="70"></circle>
-
-            </svg>
-                    <div class="nunber">
-                        <h1>50<span>%</span></h1>
-
-                    </div>
-                    <div class="texto">HTML </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <svg class="percent">
-                <circle class="rail" r="70" cx="70" cy="70"></circle>
-                <circle class="progress" r="70" cx="70" cy="70"></circle>
-
-            </svg>
-                    <div class="nunber">
-                        <h1>40<span>%</span></h1>
-
-                    </div>
-                    <div class="texto">CSS </div>
-                </div>
-            </div>
-
-
-
-
-        </div>
-    </div>
-    <div class="max800px">
-        <div class="conteiner">
-
-            <div class="card">
-                <div class="box">
-                    <svg class="percent">
-                <circle class="rail" r="70" cx="70" cy="70"></circle>
-                <circle class="progress" r="70" cx="70" cy="70"></circle>
-
-            </svg>
-                    <div class="nunber">
-                        <h1>40<span>%</span></h1>
-
-                    </div>
-                    <div class="texto">CSS </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <svg class="percent">
-                <circle class="rail" r="70" cx="70" cy="70"></circle>
-                <circle class="progress" r="70" cx="70" cy="70"></circle>
-
-            </svg>
-                    <div class="nunber">
-                        <h1>30<span>%</span></h1>
-
-                    </div>
-                    <div class="texto">JavaScript</div>
-                </div>
-            </div>
-
-
-
-        </div>
-    </div>
-
-    </div>
-
-    </div>
-
     <div class="rodape">
         <div class="educacao">
             Educação
