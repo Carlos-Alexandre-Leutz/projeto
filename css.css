@@ -12,7 +12,7 @@ body {
     align-items: center;
 }
 
-.cabesalho {
+.header {
     width: 100%;
     max-width: 800px;
     background-color: #F3F3F3;
@@ -247,98 +247,6 @@ A:hover {
     margin: 5px;
 }
 
-svg {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    ;
-}
-
-svg circle {
-    width: 100%;
-    height: 100%;
-    fill: none;
-    stroke: #D6D6D8;
-    stroke-width: 15;
-    stroke-linecap: square;
-    transform: translate(10px, 9px);
-}
-
-.card:nth-child(1) svg circle:nth-child(2) {
-    stroke: #2577A9;
-    stroke-dasharray: 220;
-    stroke-dashoffset: 110;
-}
-
-.card:nth-child(2) svg circle:nth-child(2) {
-    stroke: #2577A9;
-    stroke-dasharray: 260;
-    stroke-dashoffset: 190;
-}
-
-.card:nth-child(3) svg circle:nth-child(2) {
-    stroke: #2577A9;
-    stroke-dasharray: 310;
-    stroke-dashoffset: 290;
-}
-
-.card:nth-child(4) svg circle:nth-child(2) {
-    stroke: #2577A9;
-    stroke-dasharray: 260;
-    stroke-dashoffset: 190;
-}
-
-
-/**alinhamento da bola*/
-
-.conteiner {
-    position: relative;
-    width: 100%;
-    max-width: 730px;
-    display: flex;
-    justify-content: space-around;
-    left: 35px;
-    margin-top: 50px;
-}
-
-.conteiner .card {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    height: 190px;
-    width: 160px;
-    border-radius: 10px;
-}
-
-.conteiner .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0.5);
-}
-
-.percent {
-    position: relative;
-    width: 180px;
-    height: 160px;
-}
-
-.nunber {
-    position: absolute;
-    top: 35px;
-    left: 45px;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.texto {
-    font-size: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    position: relative;
-    text-align: center;
-}
-
 .rodape {
     background-color: #314151;
     height: 100%;
@@ -405,7 +313,7 @@ p {
 
 .univer {
     position: relative;
-    margin-top: 50px;
+    margin-top: 0px;
     left: 60px;
     width: 100%;
     max-width: 600px;
@@ -414,6 +322,60 @@ p {
 .forma img {
     width: 20px;
     height: 20px;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.single-chart {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 2.8;
+    animation: progress 1s ease-out forwards;
+}
+
+.text {
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    text-align: center;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+.circular-chart.blue .circle {
+    stroke: #4E8FBB;
+}
+
+.percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
 }
 
 @media screen and (min-width: 800px) {
@@ -426,7 +388,7 @@ p {
     #icone {
         display: none;
     }
-    .barra {
+    .bar {
         display: none;
     }
     .list-auto {
@@ -438,6 +400,10 @@ p {
 }
 
 @media screen and (max-width: 800px) {
+    .flex-wrapper {
+        display: inline;
+        flex-flow: row nowrap;
+    }
     #check {
         display: none;
     }
@@ -447,7 +413,7 @@ p {
         top: 10px;
         width: 70%;
     }
-    .cabesalho {
+    .header {
         height: 100px;
     }
     .funcao {
@@ -471,6 +437,7 @@ p {
     .univer {
         width: 100%;
         max-width: 80%;
+        margin-top: 50px;
     }
     .educacao {
         margin-left: 13%;
@@ -483,18 +450,6 @@ p {
     }
     .oitocentospx {
         display: none;
-    }
-    .primeiro {
-        display: none;
-    }
-    .max800px .conteiner {
-        left: 0px;
-    }
-    .max800px .nunber {
-        width: 20px;
-    }
-    .max800px .percent {
-        width: 100%;
     }
     .mim {
         margin-left: 30%;
@@ -523,7 +478,7 @@ p {
         max-width: 30%;
         max-height: 30%;
     }
-    .barra {
+    .bar {
         background-color: #333;
         height: 400px;
         width: 300px;
@@ -557,10 +512,10 @@ p {
         position: relative;
         margin-left: 10%;
     }
-    #check:checked~.barra {
+    #check:checked~.bar {
         transform: translateX(300px)
     }
-    #check:checked~.barra nav a .link {
+    #check:checked~.bar nav a .link {
         opacity: 1;
         margin-top: 0px;
         transition-delay: .2s;
